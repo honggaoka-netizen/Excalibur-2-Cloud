@@ -1,8 +1,8 @@
 # Черновики посева Max: Traveler's Coffee Нефтеюганск
 
 Статус: ЧЕРНОВИК. Не публиковать. Ждать команду «ставь».
-Copy-loop: Writer meaning → Sol draft → critique → revise → humanize
-Модель прозы: Gemini 3.8 Flash
+Copy-loop: Writer meaning → Sol draft → critique → revise → humanize → gate-fix
+Модель прозы: Gemini 3.8 Flash (`gemini-3.8-flash-high`)
 Дата: 2026-09-12
 
 ## Пост 1. Кто мы
@@ -38,8 +38,11 @@ NAP: нет полного NAP
 ключи: Рандеву, 2 этаж, ежедневно с 10:00 до 22:00, +7 982 411-20-10, Усть-Балыкская 6, Traveler's Coffee Нефтеюганск
 NAP: да
 
-## Гейты
-- em/en dash: 0
+## Гейты (директор, python `len`)
+- длина: 443 / 404 / 409 (коридор 400–900)
+- em/en dash в финале: 0
 - forbidden phrases: нет
 - stuffing: нет
+- «ресторан Нефтеюганск»: 1 раз, пост 1
 - слоган: не использован
+- Publish: не делали
