@@ -1,7 +1,7 @@
 {
   "version": "1",
   "complete": false,
-  "updated_at": null,
+  "updated_at": "2026-09-14T06:05:00Z",
   "phases": {
     "cloud": "pending",
     "site": "pending",
@@ -11,5 +11,5 @@
     "cta": "pending",
     "scout": "pending"
   },
-  "notes": "excalibur-blog-setup stamps phases to done and sets complete=true when all required phases pass."
+  "notes": "2026-09-14 Daily cron (Excalibur Daily) stopped at Setup gate. Environment connected; publish secrets absent in this run. Tenant files still SETUP_REQUIRED. Human must answer block 0 (Memories OFF + Secrets yes/no, no values). Do not stamp complete. No Scout/Research/Publish."
 }
