@@ -1,7 +1,7 @@
 {
   "version": "1",
   "complete": false,
-  "updated_at": null,
+  "updated_at": "2026-09-15T06:00:00Z",
   "phases": {
     "cloud": "pending",
     "site": "pending",
@@ -11,5 +11,5 @@
     "cta": "pending",
     "scout": "pending"
   },
-  "notes": "excalibur-blog-setup stamps phases to done and sets complete=true when all required phases pass."
+  "notes": "2026-09-15 Daily cron hit Setup gate. tenant-config.setup_complete=false. doctor SUMMARY errors=0 setup_complete=False. Scout/Research/Publish not started. Waiting for human First-run answers (blocks 0–7). Do not stamp complete."
 }
