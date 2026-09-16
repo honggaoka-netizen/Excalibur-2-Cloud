@@ -2,15 +2,25 @@
 
 Ответы yes/no. **Секреты сюда не писать.**
 
+Заполнено Setup 2026-09-16 (Daily cron `Excalibur Daily` остановился на gate).
+Человек ещё не подтвердил Memories OFF и Secrets — фаза `cloud` **не done**.
+
 | Пункт | Статус | Комментарий |
 |-------|--------|-------------|
-| Репозиторий подключён к Cursor Cloud Environment | pending | |
-| Automation Tools → **Memories = OFF** | pending | Official docs: Memories ON by default |
-| Secrets: PUBLIC_SITE_URL | pending | |
-| Secrets: FTP_HOST / FTP_USER / FTP_PASS / FTP_ROOT | pending | SFTP under FTP_* names |
-| MCP Wordstat (если нужен Scout) | pending | optional |
+| Репозиторий подключён к Cursor Cloud Environment | yes | Environment `bb427594-ae1b-11f1-bf4b-42ffb4d10ea7`, repo `github.com/honggaoka-netizen/Excalibur-2-Cloud`, build resolved (`bld-20260915-132c484f-5507-4322-808c-577e25565264`) |
+| Automation Tools → **Memories = OFF** | pending | Prompt Daily говорит OFF; UI Setup не подтверждён человеком. Docs: Memories ON by default |
+| Secrets: PUBLIC_SITE_URL | no | Имени нет в env этого прогона; live URL для doctor/today не задан |
+| Secrets: FTP_HOST / FTP_USER / FTP_PASS / FTP_ROOT | no | Имён нет в env этого прогона (SFTP под FTP_* ) |
+| MCP Wordstat (если нужен Scout) | pending | optional; Scout не запускался |
 | MCP WordPress blob / image API (если нужны) | pending | optional |
 | Image API key (Kie / provider) | pending | optional until Cover |
-| Yandex Metrika tokens | pending | optional Content-learner |
-| First-run automation = Setup prompt | pending | см. CLOUD-FIRST-RUN.md |
-| Daily automation = CLOUD-AUTOMATION.md (после setup) | pending | |
+| Yandex Metrika tokens | no | `YANDEX_METRIKA_*` нет в env |
+| First-run automation = Setup prompt | no | First-run не завершён. Этот прогон = Daily cron, не анкета |
+| Daily automation = CLOUD-AUTOMATION.md (после setup) | yes | `Excalibur Daily` (`1521c9b3-9f48-11f1-a7d1-d6b4613131ce`) enabled, cron `0 6 * * 1-5`. Пока setup не complete — Daily должен только останавливаться на Setup |
+
+## Что проверено скриптами (2026-09-16)
+
+- `python3 scripts/excalibur_blog_doctor.py` → `SUMMARY errors=0 warnings=0 setup_complete=False`
+- `python3 scripts/excalibur_blog_today.py` → `EXCALIBUR_TOPIC_SELECTION=needs_scout`, published пусто; Scout **не** запускался
+- `tenant-config.setup_complete` = false, `memory/setup/status.json` complete = false
+- Все фазы Setup: pending (бренд / автор / SOUL / обложки / CTA / signal_urls пустые)
