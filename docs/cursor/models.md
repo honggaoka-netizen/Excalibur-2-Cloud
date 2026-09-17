@@ -1,10 +1,10 @@
-# Модели для субагентов (выжимка, 2026-08-20)
+# Модели для субагентов (выжимка, 2026-09-17)
 
 Источники:
 
 - https://cursor.com/docs/subagents.md#model-configuration
 - https://cursor.com/docs/models-and-pricing
-- https://cursor.com/docs/models/gemini-3-7-flash
+- https://cursor.com/docs/models/gemini-3-8-flash
 
 ## Pin vs inherit
 
@@ -15,13 +15,13 @@
 
 Если Task **опускает** `model`, в Cloud Agent runtime субагент часто
 берёт модель **родителя**, даже если YAML другой. Поэтому Директор
-**явно** передаёт `gemini-3.7-flash-high` на текстовые шаги.
+**явно** передаёт `gemini-3.8-flash-high` на текстовые шаги.
 
-## Latest Gemini (каталог 2026-08-20)
+## Latest Gemini (каталог 2026-09-17)
 
-В публичном каталоге Cursor не hidden: **Gemini 3.7 Flash**
-(`gemini-3.7-flash`). Task slug с effort high:
-`gemini-3.7-flash-high`.
+В публичном каталоге Cursor не hidden: **Gemini 3.8 Flash**
+(`gemini-3.8-flash`). Task slug с effort high:
+`gemini-3.8-flash-high` (в Cursor runtime ID `gemini-3.8-flash`, параметры `effort=high` / slug `gemini-3.8-flash-high`).
 
 Это модель для:
 
