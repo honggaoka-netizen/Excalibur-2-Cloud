@@ -1,7 +1,7 @@
 {
   "version": "1",
   "complete": false,
-  "updated_at": null,
+  "updated_at": "2026-09-18T06:20:00Z",
   "phases": {
     "cloud": "pending",
     "site": "pending",
@@ -11,5 +11,5 @@
     "cta": "pending",
     "scout": "pending"
   },
-  "notes": "excalibur-blog-setup stamps phases to done and sets complete=true when all required phases pass."
+  "notes": "Daily 2026-09-18 stopped at Setup gate. Block 0 observed (environment yes; secrets not in env; Memories OFF unconfirmed). complete=false until human answers blocks 0–7. Do not stamp done without human."
 }
