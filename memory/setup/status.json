@@ -11,5 +11,5 @@
     "cta": "pending",
     "scout": "pending"
   },
-  "notes": "excalibur-blog-setup stamps phases to done and sets complete=true when all required phases pass."
+  "notes": "2026-09-21 Daily cron hit Setup gate: tenant empty, secrets unset. Cloud checklist inspected (not done). Waiting for human Block 0 confirmation, then Site→Author→Voice→Visual→CTA→Scout. Do not stamp complete."
 }
