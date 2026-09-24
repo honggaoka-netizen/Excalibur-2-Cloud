@@ -1,7 +1,7 @@
 {
   "version": "1",
   "complete": false,
-  "updated_at": null,
+  "updated_at": "2026-09-24T06:07:00Z",
   "phases": {
     "cloud": "pending",
     "site": "pending",
@@ -11,5 +11,5 @@
     "cta": "pending",
     "scout": "pending"
   },
-  "notes": "excalibur-blog-setup stamps phases to done and sets complete=true when all required phases pass."
+  "notes": "Daily cron 2026-09-24 fired before tenant onboarding. This window is Setup, not Director. Cloud checklist observed (env yes, secrets unset, Memories UI unconfirmed). No Scout/Research/Publish. complete stays false until blocks 0–7 are done."
 }
