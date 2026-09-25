@@ -11,5 +11,5 @@
     "cta": "pending",
     "scout": "pending"
   },
-  "notes": "excalibur-blog-setup stamps phases to done and sets complete=true when all required phases pass."
+  "notes": "Daily cron 2026-09-25 stopped at Setup gate. Cloud checklist filled from environment (Memories OFF still pending human). complete stays false until blocks 0–7 done."
 }

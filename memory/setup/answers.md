@@ -3,7 +3,12 @@
 <!-- Заполняет excalibur-blog-setup. Без секретов и паролей. -->
 
 ## Cloud
-- _(pending)_
+- Environment: подключён (Repository, id `bb427594-ae1b-11f1-bf4b-42ffb4d10ea7`)
+- Memories OFF: не подтверждено человеком (нужен ответ блока 0)
+- Secrets PUBLIC_SITE_URL / FTP_* / EXCALIBUR_BLOG_ALLOW_PUBLISH: в runtime отсутствуют
+- Metrika: UNSET
+- Этот прогон = Daily cron, не First-run. Setup не complete — статья не пишется
+- Человек ещё не ответил на блок 0
 
 ## Site
 - _(pending)_
