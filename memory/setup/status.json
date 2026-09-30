@@ -1,7 +1,7 @@
 {
   "version": "1",
   "complete": false,
-  "updated_at": null,
+  "updated_at": "2026-09-30T06:14:32Z",
   "phases": {
     "cloud": "pending",
     "site": "pending",
@@ -11,5 +11,5 @@
     "cta": "pending",
     "scout": "pending"
   },
-  "notes": "excalibur-blog-setup stamps phases to done and sets complete=true when all required phases pass."
+  "notes": "Daily automation 2026-09-30 stopped at Setup gate. Cloud checklist observed (env connected, publish secrets absent, Memories OFF not human-confirmed). Do not stamp complete until blocks 0–7 have human answers. Scout/Research/Publish not started."
 }
